@@ -1,6 +1,6 @@
 deployment:
   name: flaskapp
-  image: nikolambda/testing-app
+  image: blade2gt/du
   tag: v1
 
 svc:
