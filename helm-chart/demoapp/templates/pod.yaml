@@ -3,8 +3,7 @@ kind: Pod
 metadata:
   name: {{ .Values.deployment.name }}-{{ .Values.deployment.tag }}
   labels:
-     app: {{ .Values.deployment.name }}
-     version: {{ .Values.deployment.tag }}
+     app: {{ .Values.deployment.name }}-{{ .Values.deployment.tag }}
 spec:
   containers:
   - name: {{ .Values.deployment.name }}{{ .Values.deployment.tag }}
